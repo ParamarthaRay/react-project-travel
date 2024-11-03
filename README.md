@@ -2,7 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 18730147816e4c2945b55fc964bf969d37dacd7e
 ## Visit the Deployed Website
 
 To visit the deployed website, [click here](https://react-project-travel.vercel.app/).
