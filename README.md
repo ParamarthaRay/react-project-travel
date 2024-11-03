@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Visit the Deployed Website
+
+To visit the deployed website, [click here](https://react-project-travel.vercel.app/).
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -71,6 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-## Visit the Deployed Website
 
-To visit the deployed website, [click here](https://react-project-travel.vercel.app/).
