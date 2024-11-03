@@ -1,0 +1,57 @@
+/* BookingForm.css */
+
+.booking-form {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the form */
+    border: 3px solid #ccc;
+    border-radius: 30px;
+    background-color: blanchedalmond;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booking-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .form-section {
+    margin-bottom: 20px;
+  }
+  
+  .form-section h3 {
+    margin-bottom: 10px;
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .booking-form button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .booking-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

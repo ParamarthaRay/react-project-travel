@@ -1,0 +1,100 @@
+.homemain {
+  text-align: center;
+  padding: 50px;
+}
+
+.homemain h2 {
+  color: aquamarine;
+}
+
+.homemain p {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: aquamarine;
+}
+
+/* Carousel container */
+
+
+
+/* Swiper slide image styles */
+.home-carousel img {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+
+  width: 100%;
+  height: 250px; /* Adjusted for increased width */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+}
+
+.carousel-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Home container gradient background */
+.home__container {
+  width: 100%;
+  background-image: linear-gradient(rgba(6, 20, 36, 1), rgba(20, 68, 122, 1));
+  height: 66vh;
+  position: relative;
+}
+
+/* Swiper specific adjustments */
+.swiper-button-next,
+.swiper-button-prev {
+  color: aquamarine;
+}
+
+.swiper-pagination-bullet {
+  background-color: aquamarine;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff;
+}
+
+.customer-reviews {
+  margin-top: 40px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between; /* Space between each review box */
+  flex-wrap: wrap; /* Allow wrapping to the next line if necessary */
+}
+
+.review-box {
+  background-color: blanchedalmond; /* Light background color */
+  border: 10px solid aquamarine; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  width: 24%; /* Set width for the boxes */
+  margin: 10px; /* Margin around each box */
+  transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.review-box:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+blockquote {
+  margin: 0; /* Remove default margin */
+  font-style: italic; /* Italicize text */
+  font-weight: 800;
+  font-size: medium;
+}
+
+cite {
+  display: block; /* Display citation on a new line */
+  margin-top: 10px; /* Space above the citation */
+  font-weight: bold; /* Bold citation */
+}
+

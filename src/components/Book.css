@@ -1,0 +1,146 @@
+/* Book.css */
+
+.payment-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  width: 90%;
+  max-width: 600px;
+  min-width: 300px;
+  background: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-payment-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.payment-method h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.radio-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.radio-container label:not(:last-child) {
+  margin-right: 10px;
+}
+
+.card-info-container {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-info label {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  font-size: 0.9rem;
+}
+
+.card-info input {
+  margin-top: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+.expire-ccv {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 0; /* Remove any extra margin */
+}
+
+.expire-date {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 0.3rem;
+  display: flex;
+}
+
+.save-card-info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  font-size: 14px;
+  color: #f7f7f7;
+  background-image: linear-gradient(to bottom right, rgba(78,172,253,255), rgba(8,92,243,255));
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+  margin-top: 0; /* No margin to ensure no gap */
+}
+
+.button:hover {
+  background-image: linear-gradient(to bottom right, rgba(8,92,243,200), rgba(8,92,243,200));
+}
+
+/* Responsive adjustments for screens smaller than 850px */
+@media only screen and (max-width: 850px) {
+  .main {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .button .btn {
+    padding: 0.3rem 0.6rem; /* Decrease padding for a smaller button */
+    font-size: 10px; /* Adjust font size for a smaller appearance */
+    border-radius: 25px; /* Make the button more elliptical */
+    max-width: 150px; /* Set a max width for the button */
+  }
+
+  .expire-ccv {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Responsive adjustments for screens smaller than 400px */
+@media only screen and (max-width: 400px) {
+  .card-info input {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .expire-ccv {
+    gap: 3px;
+  }
+
+  .button {
+    margin-top: 5px; /* Minimal space to separate the button */
+    padding: 0.2rem 0.5rem; /* Decrease padding for a smaller button */
+    font-size: 8px; /* Adjust font size for a smaller appearance */
+    border-radius: 20px; /* Make the button more elliptical */
+    max-width: 100px; /* Optional: Set a max width for the button */
+  }
+}

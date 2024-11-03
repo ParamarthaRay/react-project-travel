@@ -1,0 +1,43 @@
+/* Confirmation.css */
+
+/* Styles for the container to center the confirmation box */
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-image: url('./images/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;  /* Light background color */
+  padding: 20px; /* Padding for smaller screens */
+}
+
+/* Styles for the confirmation box */
+.confirmation-box {
+  background-color: white; /* White background for the box */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  padding: 40px; /* Padding inside the box */
+  text-align: center; /* Centered text */
+  max-width: 500px; /* Max width for the box */
+  width: 100%; /* Responsive width */
+}
+
+/* Button styles */
+.confirmation-box button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+.confirmation-box button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

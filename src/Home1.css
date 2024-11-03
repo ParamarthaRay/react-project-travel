@@ -1,0 +1,104 @@
+.home__container {
+    width: 100%;
+    background-image: linear-gradient(rgba(6, 20, 36, 1), rgba(20, 68, 122, 1));
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home {
+    background: #fff;
+    width: 85%;
+    max-width: 600px;
+    height: 345px; /* Allow auto height */
+    border-radius: 10px;
+    padding: 1rem; /* Reduced padding */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.home > p {
+    font-size: 2rem; /* Reduced font size */
+    font-weight: 700;
+    color: #3570ca;
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto; /* Adjusted margin for compact layout */
+    flex-wrap: wrap;
+}
+
+.home__input {
+    width: 28%; /* Slightly reduced width */
+    max-width: 180px; /* Limit max width for better responsiveness */
+    text-align: center;
+}
+
+.home__input > p {
+    font-size: 1.4rem; /* Reduced font size */
+    font-weight: bold;
+}
+
+.home__input > select,
+.home__input > input[type="date"] {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1.1rem; /* Slightly reduced font size */
+    width: 100%;
+    padding: 0.4rem; /* Reduced padding */
+    margin-top: 0.3rem; /* Reduced margin */
+}
+
+.home__search {
+    padding: 0.6rem 2rem; /* Reduced padding */
+    font-size: 1.4rem; /* Reduced font size */
+    background-image: linear-gradient(to bottom right, rgba(78, 172, 253, 1), rgba(8, 92, 243, 1));
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin: 0.8rem auto; /* Adjusted margin for compact look */
+}
+
+.home__search:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgba(8, 92, 243, 0.8), rgba(8, 92, 243, 0.8));
+}
+
+@media only screen and (max-width: 768px) {
+    .home__container {
+        min-height: 480px; /* Adjusted height for smaller screens */
+    }
+    .home {
+        width: 90%;
+        max-width: 380px;
+        min-height: 480px; /* Reduced max width for small screens */
+        padding: 0.8rem; /* Reduced padding */
+    }
+    .home__input {
+        width: 42%; /* Increased width slightly for compact layout */
+    }
+    .home__input > p,
+    .home__input > select,
+    .home__input > input[type="date"] {
+        font-size: 1.1rem; /* Adjusted font size */
+    }
+    .inputs {
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+    .home > p {
+        font-size: 1.6rem; /* Reduced font size */
+    }
+    .home__search {
+        padding: 0.4rem 1.8rem; /* Adjusted padding */
+    }
+}

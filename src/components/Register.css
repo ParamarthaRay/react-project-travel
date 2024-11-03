@@ -1,0 +1,96 @@
+.register{
+    background-image: url('./images/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+
+}
+.register__conatainer{
+    width: 90%; /* Make the container responsive */
+    max-width: 350px;
+    height: auto;
+    background: blanchedalmond;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    background: white;
+    border: 1px solid grey;
+}
+.register__img {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.register__img > img {
+    width: 15%; /* Slightly reduce image size */
+}
+
+.register p, .register h3 {
+    font-size: 1.2rem;
+}
+.register  h3{
+    color: rgba(0, 0, 0, 0.717);
+    font-size: 1.5rem;
+}
+.btn{
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to bottom right, rgba(78,172,253,255), rgba(8,92,243,255));
+    
+}
+.btn:hover{
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to bottom right, aquamarine,aquamarine);
+    color: black;
+    }
+@media only screen and (max-width: 850px) {
+    .login__container {
+        width: 100%;
+        padding: 15px;
+    }
+    input {
+        width: 90%; /* Ensure button takes up most of the width */
+        padding: 8px;
+        font-size: 14px;
+    }
+    .btn{
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to bottom right, rgba(78,172,253,255), rgba(8,92,243,255));
+    }
+    .btn:hover{
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 50px;
+        border: none;
+        background-image: linear-gradient(to bottom right, aquamarine,aquamarine);
+        color: black;
+        }
+}

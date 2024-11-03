@@ -1,0 +1,33 @@
+.flight__container{
+    width: 100%;
+    background-image: url('./images/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    padding-bottom: 3rem;
+}
+.flight{
+    margin: 0 7rem;
+    padding: 3rem 0;
+}
+.flight > h3{
+   font-size: 2rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+   color: aquamarine;
+}
+.flight__cards{
+ width: 60%;
+ margin: auto;
+}
+@media only screen and (max-width: 768px) {
+    .flight__cards{
+        width: 100%;
+    }
+    .flight{
+        margin: 0 1.5rem;
+        
+    }
+   
+}

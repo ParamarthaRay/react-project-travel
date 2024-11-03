@@ -1,0 +1,57 @@
+.card__container {
+    width: 100%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 1rem; /* Added padding for spacing */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.card {
+    width: 90%; /* Adjusted width for better appearance */
+    max-width: 500px; /* Set a maximum width to keep cards from being too wide */
+    margin: 1.5rem auto; /* Centered with auto margins */
+    padding: 1.5rem; /* Adjusted padding */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .4);
+}
+
+.card__info {
+    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 1.5rem; /* Added margin for spacing */
+    text-align: left; /* Ensures text is left-aligned */
+}
+
+.card__btn {
+    width:30%;
+    display: block; /* Changed to block for centering */
+    margin: 1.5rem auto; /* Centered with auto margins */
+    padding: 0.5rem 2rem; /* Reduced padding */
+    font-size: 1.2rem; /* Reduced font size */
+    background-image: linear-gradient(to bottom right, rgba(78, 172, 253, 1), rgba(8, 92, 243, 1));
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center; /* Centered text within button */
+    border: none; /* Removed border for a cleaner look */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.card__btn:hover {
+    background-image: linear-gradient(to bottom right, aquamarine, aquamarine);
+}
+
+.card__btn a {
+    color: black;
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: 700;
+    text-decoration: none; /* Remove underline */
+}
+.card__btn a:hover {
+color: black;
+font-size: 1rem; /* Adjusted font size */
+font-weight: 700;
+text-decoration: none; /* Remove underline */
+}

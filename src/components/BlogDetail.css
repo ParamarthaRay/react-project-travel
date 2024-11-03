@@ -1,0 +1,63 @@
+.blog-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url('./images/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-detail h1 {
+    font-size: 2.5rem;
+    color:aquamarine;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  /* Decrease image size */
+  .blog-detail img {
+    width: 80%; /* Set width to 80% of the parent container */
+    max-width: 600px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-detail .blog-content {
+    text-align: left;
+    font-size: 1.4rem;
+    
+    line-height: 1.6;
+    color: aquamarine;
+  }
+  
+  .blog-detail h3 {
+    margin-left: 25px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  .blog-detail ul {
+    margin-left: 25px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size :19px;
+  }
+
+  .blog-detail p {
+    margin-left: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+  }
+  
+  .blog-detail ul li {
+    margin-bottom: 10px;
+  }
+  

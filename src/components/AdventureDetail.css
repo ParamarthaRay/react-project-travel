@@ -1,0 +1,59 @@
+.adventure-detail {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.adventure-detail .adventure-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.adventure-detail h1 {
+  color: aquamarine;
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.adventure-detail p {
+  color: aquamarine;
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  margin: 20px 0;
+}
+
+.adventure-detail h2 {
+  color: bisque;
+  margin: 20px 0;
+  font-size: 2rem
+}
+
+.adventure-detail h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: aqua;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.adventure-detail ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.adventure-detail ul li {
+  margin: 10px 0;
+  background-color: blanchedalmond;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.adventure-detail ul li:hover {
+  background-color: aquamarine;
+}

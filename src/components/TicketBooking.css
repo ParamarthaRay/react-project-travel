@@ -1,0 +1,34 @@
+/* TicketBooking.css */
+
+.ticket-booking {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ticket-booking h2 {
+    margin-bottom: 10px;
+  }
+  
+  .ticket-booking p {
+    margin: 5px 0;
+  }
+  
+  .ticket-booking ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ticket-booking button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ticket-booking button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  

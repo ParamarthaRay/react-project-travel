@@ -1,0 +1,68 @@
+.card__container {
+    width: 100%;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 85%; /* Adjusted width for responsiveness */
+    margin: auto;
+    padding: 0.8rem; /* Further reduced padding */
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+    margin: 1rem 0; /* Adjusted margin */
+}
+
+.card__info {
+    font-size: 0.9rem; /* Further reduced font size */
+    margin-bottom: 0.6rem; /* Adjusted margin */
+    text-align: center; /* Center the text */
+}
+
+.card .row1,
+.card .row2,
+.card .row3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0; /* Reduced padding for compactness */
+    align-items: center; /* Align items vertically */
+}
+
+.card span {
+    font-size: 0.9rem; /* Further reduced font size */
+    font-weight: bold;
+}
+
+.card__btn {
+    display: block; /* Center button */
+    margin: 0.8rem auto; /* Center with margin auto */
+    padding: 0.5rem 1.2rem; /* Reduced padding */
+    font-size: 1rem; /* Further reduced font size */
+    background-image: linear-gradient(to bottom right, rgba(78, 172, 253, 1), rgba(8, 92, 243, 1));
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center; /* Center button text */
+    border: none;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background-image: linear-gradient(to bottom right, aquamarine, aquamarine);
+}
+
+.card__btn a {
+    color: black;
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: 700;
+    text-decoration: none; /* Remove underline */
+}
+.card__btn a:hover {
+color: black;
+font-size: 1rem; /* Adjusted font size */
+font-weight: 700;
+text-decoration: none; /* Remove underline */
+}

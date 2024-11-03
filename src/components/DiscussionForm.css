@@ -1,0 +1,101 @@
+.discussion-form-page {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px; /* 30px from the top */
+    background-image: url('./images/bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+    box-sizing: border-box;
+}
+
+.discussion-form-container {
+    width: 60%; /* Fixed width for the form */
+    max-width: 600px; /* Limit width for larger screens */
+    background: bisque; /* Grey background color for form */
+    text-align: center;
+    border-radius: 40px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; /* 40px space between form and footer */
+}
+
+.discussion-form {
+    width: 100%;
+    padding: 0 20px; /* Padding for content spacing */
+}
+
+.discussion-form h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.discussion-form label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%; /* Full width for alignment */
+}
+
+.discussion-form input,
+.discussion-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 80%; /* Adjusted width to fit within the container */
+    background: white;
+}
+
+
+
+.discussion-form button {
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    background-color: pink; /* Pink background for submit button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60%; /* Smaller button width for aesthetics */
+    margin-top: 20px;
+}
+
+.discussion-form button:hover {
+    background-color: #ff69b4; /* Darker pink on hover */
+}
+
+/* Footer Styling */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto; /* Pushes footer to the bottom of the page */
+}
+
+@media only screen and (max-width: 850px) {
+    .form-container {
+        width: 80%; /* Smaller width for mobile */
+        padding: 15px;
+    }
+    .discussion-form input,
+    .discussion-form textarea {
+        width: 90%; /* Full width for mobile */
+        padding: 8px;
+        font-size: 14px;
+    }
+    .discussion-form button {
+        width: 80%; /* Button width for mobile */
+        padding: 0.6rem 1.4rem;
+        font-size: 1rem;
+    }
+}

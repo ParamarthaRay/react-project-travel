@@ -1,0 +1,55 @@
+/* HotelBooking.css */
+
+.content {
+    margin-top: 80px; /* Adjust according to your navbar height */
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      padding: 15px;
+    }
+  }
+  
+  
+  .hotel-booking {
+    max-width: 1200px; /* Set a maximum width for the booking section */
+    margin: auto; /* Center the section */
+    text-align: center; /* Center text */
+  }
+  
+  .card-container {
+    display: flex; /* Use flexbox for card layout */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    justify-content: space-around; /* Space cards evenly */
+    margin-top: 20px; /* Add margin to top */
+  }
+  
+  .hotel-card {
+    background-color: #f9f9f9; /* Card background color */
+    border: 1px solid #ddd; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    width: 300px; /* Fixed width for cards */
+    margin: 10px; /* Margin between cards */
+    transition: transform 0.2s; /* Smooth transition */
+  }
+  
+  .hotel-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .hotel-card img {
+    width: 100%; /* Ensure image fits the card */
+    border-top-left-radius: 10px; /* Rounded corners on top */
+    border-top-right-radius: 10px; /* Rounded corners on top */
+  }
+  
+  .hotel-card h3 {
+    margin: 15px 0; /* Margin for title */
+  }
+  
+  .hotel-card p {
+    padding: 0 15px 15px; /* Padding for description */
+  }
+  

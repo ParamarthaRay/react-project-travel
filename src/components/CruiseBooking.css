@@ -1,0 +1,121 @@
+/* General styling for CruiseBooking component */
+.cruise-booking {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url('./images/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+}
+
+.cruise-booking h2 {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: aquamarine;
+  margin-bottom: 30px;
+}
+
+/* Swiper container styling */
+.swiper-slide {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cruise card styling with box shadow */
+.cruise-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cruise-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cruise-card h3 {
+  font-size: 1.6rem;
+  color: #ff7f50; /* Orange for title */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.cruise-card p {
+  color: #555;
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.cruise-card .book-cruise-button {
+  background-color: #ff7f50; /* Orange for button */
+  color: white;
+  font-size: 1rem;
+  display: inline-block; /* Makes it behave like a button */
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Round the corners */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.cruise-card .book-cruise-button:hover {
+  background-color: #ff5722; /* Darken background on hover */
+}
+
+/* Hover effect for the rightmost slide */
+.swiper-slide-next .cruise-card {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional hover effect */
+.swiper-slide-next:hover .cruise-card {
+  transform: scale(1.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cruise-booking h2 {
+    font-size: 2rem;
+  }
+
+  .cruise-card {
+    width: 90%;
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cruise-booking h2 {
+    font-size: 1.8rem;
+  }
+
+  .cruise-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .cruise-card p,
+  .cruise-card button {
+    font-size: 0.9rem;
+  }
+}

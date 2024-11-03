@@ -1,0 +1,119 @@
+/* General styling for ItineraryPlanning component */
+.itinerary-planning {
+  text-align: center;
+  background-image: url('./images/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+}
+
+.itinerary-planning h2 {
+  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: aquamarine; /* Title color */
+  margin-bottom: 30px;
+}
+
+/* Swiper container styling */
+.swiper-slide {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Itinerary card styling */
+.itinerary-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Increased width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for scaling and shadow */
+}
+
+.itinerary-card img {
+  width: 100%;
+  height: 250px; /* Adjusted for increased width */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.itinerary-card h3 {
+  font-size: 1.6rem;
+  color: #133394; /* Light orange color for destination title */
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.itinerary-card p {
+  color: #555; /* Description text color */
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.itinerary-card button {
+  background-color: #133394; /* Light orange button color */
+  color: white; /* Button text color */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.itinerary-card button:hover {
+  background-color: #05177ca7; /* Darker orange on hover */
+}
+
+/* Hover effect for the rightmost slide */
+.swiper-slide-next .itinerary-card {
+  transform: scale(1.1); /* Scale up for the rightmost slide */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Increase shadow for the rightmost slide */
+}
+
+/* Additional hover effect for the rightmost slide */
+.swiper-slide-next:hover .itinerary-card {
+  transform: scale(1.15); /* Slightly larger scale on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .itinerary-planning h2 {
+    font-size: 2rem;
+  }
+
+  .itinerary-card {
+    width: 90%; /* Adjusts card width on smaller screens */
+  }
+
+  .swiper-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .itinerary-planning h2 {
+    font-size: 1.8rem;
+  }
+
+  .itinerary-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .itinerary-card p,
+  .itinerary-card button {
+    font-size: 0.9rem;
+  }
+}

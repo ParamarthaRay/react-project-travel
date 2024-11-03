@@ -1,0 +1,63 @@
+/* FlightBooking.css */
+
+.content {
+  padding: 20px;
+}
+
+.flight-booking {
+  text-align: center;
+}
+
+.flight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px; /* Set a fixed width for the cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flight-card img {
+  width: 100%; /* Make image responsive */
+  height: auto;
+}
+
+.flight-card h3 {
+  margin: 10px 0;
+}
+
+.flight-card p {
+  margin: 5px 0;
+}
+
+/* Book Now button styling */
+.book-now-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Input styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}

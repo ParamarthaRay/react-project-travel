@@ -1,0 +1,104 @@
+/* Reset margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body fills the viewport */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 80vh; /* Reduced height to 80% of the viewport */
+    position: relative;
+}
+
+.hero-mid {
+    width: 100%;
+    height: 60vh; /* Reduced height to 60% of the viewport */
+    position: relative;
+}
+
+/* Styling the Image */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the section without distortion */
+}
+
+/* Hero Text Styling */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    background:white;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    color:white;
+    font-weight:700;
+    padding: 0.5rem 0 2rem 0;
+}
+
+/* Button Styling */
+.hero-text .show {
+    text-decoration: none;
+    background:bisque;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.hero-text .show :hover{
+    text-decoration: none;
+    background-color:aquamarine;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+.hero-text .hide {
+    display: none;
+}
+
+/* Mid Hero Text */
+.hero-mid h1 {
+    padding-top: 4rem !important;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 555px) {
+    .hero-text h1 {
+        padding: 10px 20px;
+        font-size: 2rem; /* Adjusted for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .hero-text .show {
+        padding: 0.6rem 1.1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+}

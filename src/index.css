@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* index.css */
+body {
+  background-image: url('./components/images/bg.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures background covers the entire screen */
+}
+

@@ -1,0 +1,61 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 1.5rem; /* Reduced padding to make it more compact */
+  width: 100%; /* Ensure the footer takes full width */
+}
+
+.top i {
+  color: #fff;
+  font-size: 1.2rem; /* Reduced icon size for a smaller footer */
+  margin-left: 0.3rem; /* Reduced margin */
+}
+
+.top i:hover {
+  color: #01959a;
+}
+
+.bottom {
+  padding-top: 0.5rem; /* Further reduced padding */
+  text-align: center; /* Center the items */
+  display: flex;
+  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in each column */
+}
+
+.bottom h4 {
+  font-size: 1rem; /* Reduced heading size to minimize space */
+  padding: 0.2rem 0; /* Reduced padding */
+}
+
+.bottom a {
+  text-decoration: none;
+  color: #fafaff;
+  padding-bottom: 0.1rem; /* Reduced padding */
+  font-size: 0.9rem; /* Reduced link size for more compactness */
+}
+
+@media screen and (max-width: 850px) {
+  .footer {
+      padding: 1rem 0.5rem; /* Further adjusted padding for smaller screens */
+  }
+
+  .footer i {
+      margin: 0.3rem 0.3rem 0 0; /* Reduced margin */
+  }
+
+  .bottom {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .bottom div {
+      width: 100%; /* Ensure full width on smaller screens */
+      margin-bottom: 0.5rem; /* Reduced space between stacked divs */
+  }
+}
