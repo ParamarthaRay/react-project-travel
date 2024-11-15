@@ -1,4 +1,3 @@
-// DataApp.js
 import React, { useEffect, useState } from 'react';
 
 // Create context for app-wide state management
@@ -13,13 +12,22 @@ const DataAppProvider = ({ children }) => {
 
   // Retrieve state from localStorage or use initial state
   const [appState, setAppState] = useState(() => {
-    const savedState = localStorage.getItem('appState');
-    return savedState ? JSON.parse(savedState) : initialState;
+    try {
+      const savedState = localStorage.getItem('appState');
+      return savedState ? JSON.parse(savedState) : initialState;
+    } catch (error) {
+      console.error('Error reading from localStorage', error);
+      return initialState;
+    }
   });
 
   // Persist appState to localStorage on any state change
   useEffect(() => {
-    localStorage.setItem('appState', JSON.stringify(appState));
+    try {
+      localStorage.setItem('appState', JSON.stringify(appState));
+    } catch (error) {
+      console.error('Error saving to localStorage', error);
+    }
   }, [appState]);
 
   return (
