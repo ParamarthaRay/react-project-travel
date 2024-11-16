@@ -15,7 +15,7 @@
     padding: 0 10px;
 
 }
-.register__conatainer{
+ .register__container{
     width: 90%; /* Make the container responsive */
     max-width: 350px;
     height: auto;
@@ -48,7 +48,7 @@ input{
     color: rgba(0, 0, 0, 0.717);
     font-size: 1.5rem;
 }
-.btn{
+.register__btn{
     padding: 0.6rem 1.4rem;
     font-size: 1rem;
     cursor: pointer;
@@ -57,7 +57,7 @@ input{
     background-image: linear-gradient(to bottom right, rgba(78,172,253,255), rgba(8,92,243,255));
     
 }
-.btn:hover{
+.register__btn:hover{
     padding: 0.6rem 1.4rem;
     font-size: 1rem;
     cursor: pointer;
@@ -67,7 +67,7 @@ input{
     color: black;
     }
 @media only screen and (max-width: 850px) {
-    .login__container {
+    .register__container {
         width: 100%;
         padding: 15px;
     }
@@ -76,7 +76,7 @@ input{
         padding: 8px;
         font-size: 14px;
     }
-    .btn{
+    .register__btn{
     padding: 0.6rem 1.4rem;
     font-size: 1rem;
     cursor: pointer;

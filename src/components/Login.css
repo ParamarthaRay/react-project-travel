@@ -51,7 +51,7 @@ input {
     color: rgba(0, 0, 0, 0.717);
     font-size: 1.5rem;
 }
-.btn{
+.login__btn{
     padding: 0.6rem 1.4rem;
     font-size: 1rem;
     cursor: pointer;
@@ -61,6 +61,15 @@ input {
     
 }
 
+.login__btn:hover{
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to bottom right, aquamarine,aquamarine);
+    color: black;
+    }
 /* Ensure button and layout adjust for screens smaller than 850px */
 @media only screen and (max-width: 850px) {
     .login__container {
@@ -72,7 +81,7 @@ input {
         padding: 8px;
         font-size: 14px;
     }
-    .btn{
+    .login__btn{
         padding: 0.6rem 1.4rem;
     font-size: 1rem;
     cursor: pointer;
